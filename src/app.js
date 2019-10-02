@@ -1,5 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
+import cors from 'cors'
 
 import routes from './routes'
 import databaseConfig from './config/database'
@@ -22,6 +23,7 @@ class Application {
 
   initMiddlewares() {
     this.express.use(express.json())
+    this.express.use(cors())
   }
 
   loadRoutes() {

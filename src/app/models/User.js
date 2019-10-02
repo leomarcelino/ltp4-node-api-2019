@@ -19,7 +19,6 @@ const UserSchema = moongose.Schema(
     password: {
       type: String,
       required: true,
-      select: false,
     },
   },
   {
