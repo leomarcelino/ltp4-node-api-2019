@@ -6,7 +6,11 @@ import authConfig from '../../config/auth'
 
 const UserSchema = moongose.Schema(
   {
-    name: {
+    firstName: {
+      type: String,
+      required: true,
+    },
+    lastName: {
       type: String,
       required: true,
     },
